@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import StockPage from './pages/StockPage.jsx';
+import CorrelationHeatmapPage from './pages/CorrelationPage.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-     </h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<StockPage />} />
+        <Route path="/correlation" element={<CorrelationHeatmapPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
