@@ -5,7 +5,7 @@ import { getStockAverage, getStockCorrelation } from '../controllers/stockContro
 const router = express.Router();
 
 router.get('/stocks/', getStockAverage);
-// router.get('/stockcorrelation', getStockCorrelation);
+router.get('/stockcorrelation', getStockCorrelation);
 
 export default router;
 

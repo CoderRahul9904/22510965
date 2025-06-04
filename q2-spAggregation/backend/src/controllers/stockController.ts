@@ -23,7 +23,7 @@ export const getStockAverage = (req: any, res: any) => {
   });
 };
 
-export const getStockCorrelation = (req: Request, res: Response) => {
+export const getStockCorrelation = (req: any, res: any) => {
   const { ticker, minutes } = req.query;
   const tickers = Array.isArray(ticker) ? ticker as string[] : [];
 
