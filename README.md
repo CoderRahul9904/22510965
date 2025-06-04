@@ -31,6 +31,7 @@ Below is the screenshot for q1:-
 
 ```bash
 cd q2-spAggregation
+cd backend
 npm run dev
 ```
 
