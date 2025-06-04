@@ -25,3 +25,13 @@ node app.js
 Below is the screenshot for q1:-
 
 ![Alt text describing the image](q1-averageCalculator/q1-averageCalulator.jpeg)
+
+
+* Q2 Stock Price Aggregation
+
+```bash
+cd q2-spAggregation
+npm run dev
+```
+
+![Alt text describing the image](q2-spAggregation/client/public/q2-output.jpeg)
